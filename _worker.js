@@ -1056,7 +1056,7 @@ async function socks5Connect(addressType, addressRemote, portRemote, log) {
 
 	res = (await reader.read()).value;
 	// 响应格式（SOCKS5 服务器 -> Worker）:
-	//  +----+-----+-------+------+----------+----------+
+	// +----+-----+-------+------+----------+----------+
 	// |VER | REP |  RSV  | ATYP | BND.ADDR | BND.PORT |
 	// +----+-----+-------+------+----------+----------+
 	// | 1  |  1  | X'00' |  1   | Variable |    2     |
@@ -1198,7 +1198,7 @@ async function ADD(envadd) {
 function checkSUB(host) {
 	if ((!sub || sub == '') && (addresses.length + addressesapi.length + addressesnotls.length + addressesnotlsapi.length + addressescsv.length) == 0){
 		addresses = [
-			'Join.my.Telegram.channel.CMLiussss.to.unlock.more.premium.nodes.cf.090227.xyz#加入我的频道t.me/CMLiussss解锁更多优选节点',
+			'cf.090227.xyz#t.me/CMLiussss',
 			'visa.cn:443',
 			'www.visa.com:8443',
 			'cis.visa.com:2053',
@@ -1210,7 +1210,6 @@ function checkSUB(host) {
 			'time.is',
 			'www.wto.org:8443',
 			'chatgpt.com:2087',
-			'icook.hk',
 			//'104.17.0.0#IPv4',
 			'[2606:4700::]#IPv6'
 		];
@@ -1342,13 +1341,13 @@ async function getVLESSConfig(userID, hostName, sub, UA, RproxyIP, _url) {
 
 		return `
 ################################################################
-Subscribe / sub 订阅地址, 支持 Base64、clash-meta、sing-box 订阅格式
+Subscribe / sub 订阅地址, Support Base64、clash-meta、sing-box
 ---------------------------------------------------------------
-快速自适应订阅地址:
+Quick subscribe:
 https://${proxyhost}${hostName}/${userID}
 https://${proxyhost}${hostName}/${userID}?sub
 
-Base64订阅地址:
+Base64:
 https://${proxyhost}${hostName}/${userID}?b64
 https://${proxyhost}${hostName}/${userID}?base64
 
@@ -1382,10 +1381,7 @@ clash-meta
 ${clash}
 ---------------------------------------------------------------
 ################################################################
-telegram 交流群 技术大佬~在线发牌!
-https://t.me/CMLiussss
----------------------------------------------------------------
-github 项目地址 Star!Star!Star!!!
+
 https://github.com/cmliu/edgetunnel
 ---------------------------------------------------------------
 ################################################################
