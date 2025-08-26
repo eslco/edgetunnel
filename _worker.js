@@ -1,4 +1,4 @@
-
+// SUBCONFIG: https://github.com/eslco/base/raw/main/config/Clash/ES_Online_MultiCountry.ini
 import { connect } from 'cloudflare:sockets';
 
 let userID = '';
@@ -6,7 +6,7 @@ let proxyIP = '';
 let DNS64Server = '';
 //let sub = '';
 let subConverter = atob('U1VCQVBJLkNNTGl1c3Nzcy5uZXQ=');
-let subConfig = atob('aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvY29uZmlnL0FDTDRTU1JfT25saW5lX01pbmlfTXVsdGlNb2RlLmluaQ==');
+let subConfig = atob('aHR0cHM6Ly9naXRodWIuY29tL2VzbGNvL2Jhc2UvcmF3L21haW4vY29uZmlnL0NsYXNoL0VTX09ubGluZV9NdWx0aUNvdW50cnkuaW5p');
 let subProtocol = 'https';
 let subEmoji = 'true';
 let socks5Address = '';
@@ -4538,3 +4538,4 @@ async function nginx() {
 	`
     return text;
 }
+
